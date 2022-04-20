@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 import './navigation.css'
 import set = Reflect.set;
 
 function Navigation(): JSX.Element {
 
     const [isMenuOpen, setIsMenuOpen] = useState<Boolean>(false);
+    const [isNavbarOpen, setIsNavbarOpen] = useState<Boolean>(false)
 
     const menuToggle = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -24,8 +26,10 @@ function Navigation(): JSX.Element {
                             <div className='col-lg-6'><Navbar.Brand href="#home">Галерея</Navbar.Brand></div>
                         </div>
                         <nav>
-                            <ul>
-                                <li></li>
+                            <ul className="list-unstyled">
+                                <li>
+                                    <NavLink activeClassName='nav-active' to="/profile">Profile</NavLink>
+                                </li>
                             </ul>
                         </nav>
                     </Container>
