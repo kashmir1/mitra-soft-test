@@ -23,3 +23,7 @@
     background-image: url('../../assets/img/cross.svg');
     background-repeat: no-repeat;
 }
+
+.active {
+    color: red;
+}

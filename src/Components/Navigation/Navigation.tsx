@@ -13,6 +13,8 @@ function Navigation(): JSX.Element {
         setIsMenuOpen(!isMenuOpen)
     }
 
+    // @ts-ignore
+    // @ts-ignore
     return (
         <React.Fragment>
             <div className="container">
@@ -28,8 +30,12 @@ function Navigation(): JSX.Element {
                         <nav>
                             <ul className="list-unstyled">
                                 <li>
-                                    <NavLink activeClassName='nav-active' to="/profile">Profile</NavLink>
+                                    <NavLink className={({isActive}) => (isActive ? 'active' : '')} to="/">Галерея</NavLink>
                                 </li>
+                                <li>
+                                    <NavLink className={({isActive}) => (isActive ? 'active' : '')} to="/about">Обо мне</NavLink>
+                                </li>
+
                             </ul>
                         </nav>
                     </Container>
