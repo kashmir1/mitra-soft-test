@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Button, Card, Container, Navbar, NavDropdown} from 'react-bootstrap';
 import Navigation from "../Navigation/Navigation";
+
 function App() {
-  return (
+
+    return (
     <div className="App">
         <Navigation />
+
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
