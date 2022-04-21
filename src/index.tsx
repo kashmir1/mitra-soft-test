@@ -5,11 +5,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './Components/App/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
-import {createStore} from "redux";
+import {compose, createStore} from "redux";
 import {Provider} from "react-redux";
 import {rootReducer} from "./redux/rootReducer";
 
-const store = createStore(rootReducer);
+
+declare global {
+    interface Window {
+        __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+    }
+}
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(rootReducer, composeEnhancers());
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
