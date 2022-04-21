@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b45fbab-e357-4966-b5a2-a6c18648bb0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Gallery-item/Gallery-item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Gallery-list/Gallery-list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,8 @@
       <updated>1650368983208</updated>
       <workItem from="1650368989104" duration="434000" />
       <workItem from="1650369589322" duration="1284000" />
-      <workItem from="1650421586255" duration="9646000" />
+      <workItem from="1650421586255" duration="10343000" />
+      <workItem from="1650457742521" duration="777000" />
     </task>
     <servers />
   </component>
@@ -99,5 +99,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
